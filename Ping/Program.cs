@@ -50,7 +50,6 @@ namespace Ping
                 p.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
                 Process.Start(p);
             }
-            //Console.ReadKey();
         }
     }
 }
