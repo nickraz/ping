@@ -15,12 +15,11 @@ namespace Ping
             int timeout = 1000;
             string ans = "";
             List<IPAddress> ips = new List<IPAddress>();
-            /*ips.Add(IPAddress.Parse("10.250.0.101"));
+            ips.Add(IPAddress.Parse("10.250.0.101"));
             ips.Add(IPAddress.Parse("10.250.0.103"));
             ips.Add(IPAddress.Parse("10.250.0.104"));
             ips.Add(IPAddress.Parse("10.250.0.106"));
-            ips.Add(IPAddress.Parse("10.250.0.109"));*/
-            ips.Add(IPAddress.Parse("10.250.0.150"));
+            ips.Add(IPAddress.Parse("10.250.0.109"));
 
             System.Net.NetworkInformation.Ping ping = new System.Net.NetworkInformation.Ping();
             PingReply reply;
@@ -36,7 +35,6 @@ namespace Ping
                         success++;
                     }
                     else ans = "No ping";
-                    //Console.WriteLine(ans);
                     System.Threading.Thread.Sleep(timeout);
                 }
                 //Console.WriteLine("------");
